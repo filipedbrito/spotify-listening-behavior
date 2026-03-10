@@ -25,7 +25,7 @@ Ela mede:
 
 Por exemplo:
 
-- na transição **2016 → 2017**, cerca de **21% das músicas permaneceram**
+- na transição **2016 → 2017**, **21% das músicas permaneceram**
 - portanto **79% do repertório mudou**
 
 ![survive_track_rate](../notebooks/prints/survive_track_rate.png)
@@ -47,7 +47,7 @@ Para complementar essa leitura, calculei o percentual de **músicas novas no Top
 
 Os resultados reforçam o padrão de renovação:
 
-![new_tracks](../notebooks/prints/new_tracks.png)
+![new_tracks](../notebooks/prints/new_track.png)
 
 Ou seja, na maioria dos anos **cerca de três quartos do meu Top 100 é composto por músicas que nunca haviam aparecido antes**.
 
@@ -68,7 +68,7 @@ No entanto, existe um ponto importante:
 
 Para investigar isso, medi também a **entrada de novos artistas no Top 100 de cada ano**, ou seja, artistas que **nunca haviam aparecido antes no histórico**.
 
-![new_artists](../notebooks/prints/new_artists.png)
+![new_artist](../notebooks/prints/new_artists.png)
 
 Nos primeiros anos, a descoberta de artistas foi naturalmente alta:
 
