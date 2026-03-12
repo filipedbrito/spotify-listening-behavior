@@ -165,7 +165,7 @@ This ensures the playlists are **owned by the account and accessible via the API
 
 ## 1 — Clone the repository
 
-`git clone <your-repo-url>`
+`git clone https://github.com/filipedbrito/spotify-eclecticism.git`
 `cd spotify-eclecticism`
 
 ---
