@@ -1,6 +1,6 @@
 import pandas as pd
 
-from spotify.auth import get_public_client
+from spotify.auth import get_user_client
 from spotify.artists import get_artists_genres
 from config import DATA_RAW_PATH
 
@@ -8,7 +8,7 @@ from config import DATA_RAW_PATH
 # -------------------------------------------------
 # 1) CONECTAR NA API DO SPOTIFY
 # -------------------------------------------------
-sp = get_public_client()
+sp = get_user_client()
 
 
 # -------------------------------------------------
