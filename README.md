@@ -17,6 +17,8 @@ This repository includes a sample of my personal listening data for demonstratio
 
 ## Example Output
 
+Track survival rate between years:
+
 ![Preview](docs/images/survive_track_rate.png)
 
 ---
@@ -39,7 +41,7 @@ The project consists of two main parts:
 # Project Structure
 
 ```
-spotify-eclecticism
+spotify-listening-behavior
 ├── data
 │   └── raw
 │       └── top_tracks.csv
@@ -132,21 +134,6 @@ These datasets serve as the base input for the analysis.
 
 ---
 
-### `notebooks/`
-
-Jupyter notebooks used for **exploratory data analysis and metric calculations**.
-
-The notebook includes analyses such as:
-
-- artist diversity per year
-- genre distribution
-- track persistence between years
-- discovery of new artists over time
-
-Each playlist represents a snapshot of my listening habits during that year.
-
----
-
 # Important Note (Playlist Ownership)
 
 Spotify's official **"Your Top Songs YYYY"** playlists are owned by Spotify itself.
@@ -169,8 +156,8 @@ This ensures the playlists are **owned by the account and accessible via the API
 
 ## 1 — Clone the repository
 
-`git clone https://github.com/filipedbrito/spotify-eclecticism.git`
-`cd spotify-eclecticism`
+`git clone https://github.com/filipedbrito/spotify-listening-behavior.git`
+`cd spotify-listening-behavior`
 
 ---
 
@@ -261,15 +248,6 @@ This step ensures the playlists are **accessible through the Spotify API**.
 Run:
 `python -m scripts.get_playlist_tracks`
 
----
-
-# Data Extraction
-
-## 1 — Extract playlist tracks
-
-Run:
-`python -m scripts.get_playlist_tracks`
-
 This script:
 
 - retrieves playlists matching `top_tracks_YYYY`
@@ -319,6 +297,8 @@ Additional results and visualizations will be added as the analysis progresses.
 Full analysis and detailed write-up available at:
 
 `docs/artist_track_analysis.md`
+
+---
 
 # Technologies Used
 
