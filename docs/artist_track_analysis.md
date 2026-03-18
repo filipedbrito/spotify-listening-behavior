@@ -28,7 +28,7 @@ Por exemplo:
 - na transição **2016 → 2017**, **21% das músicas permaneceram**
 - portanto **79% do repertório mudou**
 
-![survive_track_rate](../notebooks/prints/survive_track_rate.png)
+![survive_track_rate](../docs/images/survive_track_rate.png)
 
 Durante boa parte da série histórica, a sobrevivência ficou entre **20% e 36%**, mas **caiu significativamente nos anos mais recentes**, chegando a cerca de **6% na transição 2024 → 2025**.
 
@@ -47,7 +47,7 @@ Para complementar essa leitura, calculei o percentual de **músicas novas no Top
 
 Os resultados reforçam o padrão de renovação:
 
-![new_tracks](../notebooks/prints/new_track.png)
+![new_tracks](../docs/images/new_track.png)
 
 Ou seja, na maioria dos anos **cerca de três quartos do meu Top 100 é composto por músicas que nunca haviam aparecido antes**.
 
@@ -68,7 +68,7 @@ No entanto, existe um ponto importante:
 
 Para investigar isso, medi também a **entrada de novos artistas no Top 100 de cada ano**, ou seja, artistas que **nunca haviam aparecido antes no histórico**.
 
-![new_artist](../notebooks/prints/new_artists.png)
+![new_artist](../docs/images/new_artists.png)
 
 Nos primeiros anos, a descoberta de artistas foi naturalmente alta:
 
@@ -98,7 +98,7 @@ Ou seja, mesmo quando uma música aparece pela primeira vez no meu histórico, e
 
 O padrão geral foi relativamente estável:
 
-![new_tracks_from_new_artists](../notebooks/prints/new_tracks_from_new_artists.png)
+![new_tracks_from_new_artists](../docs/images/new_tracks_from_new_artists.png)
 
 Em média:
 
@@ -128,7 +128,7 @@ Para entender quais artistas moldaram diferentes fases do meu repertório, const
 
 Alguns padrões ficam claros:
 
-![cohort_artists_tracks_years](../notebooks/prints/cohort_artists_tracks_years.png)
+![cohort_artists_tracks_years](../docs/images/cohort_artists_tracks_years.png)
 
 **Dead Fish** domina fortemente os primeiros anos da série, chegando a:
 
@@ -152,7 +152,7 @@ Essa matriz ajuda a visualizar **ondas de influência artística** ao longo do t
 
 Por fim, analisei também quais músicas aparecem **repetidamente ao longo dos anos** no Top 100.
 
-![cohort_tracks_years](../notebooks/prints/cohort_tracks_years.png)
+![cohort_tracks_years](../docs/images/cohort_tracks_years.png)
 
 Algumas faixas mostram **longevidade notável**, aparecendo em vários anos diferentes.
 

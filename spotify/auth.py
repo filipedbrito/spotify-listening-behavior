@@ -17,18 +17,3 @@ def get_user_client():
     )
 
     return spotipy.Spotify(auth_manager=auth_manager)
-
-
-def get_public_client():
-
-    client_id = os.getenv("SPOTIFY_CLIENT_ID")
-    client_secret = os.getenv("SPOTIFY_CLIENT_SECRET")
-
-    auth_manager = SpotifyClientCredentials(
-        client_id=client_id,
-        client_secret=client_secret
-    )
-
-    sp = spotipy.Spotify(auth_manager=auth_manager)
-
-    return sp
