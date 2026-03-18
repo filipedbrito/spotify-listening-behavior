@@ -197,8 +197,8 @@ https://developer.spotify.com/dashboard
 Click **Create App** and fill something like:
 
 ```
-App name: spotify-eclecticism
-App description: Personal Spotify listening analysis
+App name: spotify-listening-behavior (suggestion)
+App description: Personal Spotify listening analysis (suggestion)
 Redirect URI: http://127.0.0.1:8888/callback
 ```
 
