@@ -1,6 +1,6 @@
-# spotify-eclecticism
+# spotify-listening-behavior
 
-This project analyzes **10 years of personal Spotify listening history** to measure **how eclectic my musical taste has become over time**.
+This project analyzes **10 years of personal Spotify listening history** to understand **how my music consumption behavior evolved over time**.
 
 The analysis is based on the **Top 100 most played tracks per year**, extracted from Spotify playlists using the **Spotify Web API** and analyzed with Python.
 
@@ -9,7 +9,9 @@ The goal is to explore how my listening behavior evolved across the years and an
 - How much does my music taste change year to year?
 - How many new artists appear in my yearly top tracks?
 - Do my favorite songs persist over time?
-- Am I becoming more musically eclectic?
+- How do I balance exploration vs repetition in music?
+
+This repository includes a sample of my personal listening data for demonstration purposes.
 
 ---
 
@@ -32,23 +34,20 @@ The project consists of two main parts:
 
 ```
 spotify-eclecticism
-│
 ├── data
-│ ├── top_tracks.csv
-│ └── artist_genres.csv
+│   └── raw
+│       └── top_tracks.csv
 │
 ├── notebooks
-│ └── exploratory_analysis.ipynb
+│   └── exploratory_analysis.ipynb
 │
 ├── scripts
-│ ├── get_playlist_tracks.py
-│ └── get_artist_genres.py
+│   └── get_playlist_tracks.py
 │
 ├── spotify
-│ ├── auth.py
-│ ├── playlists.py
-│ ├── tracks.py
-│ └── artists.py
+│   ├── auth.py
+│   ├── playlists.py
+│   └── tracks.py
 │
 ├── tests
 │
@@ -70,7 +69,7 @@ Example tasks include:
 
 - retrieving playlists
 - extracting tracks from playlists
-- fetching artist metadata such as genres
+- retrieving track and artist metadata
 
 ---
 
@@ -106,7 +105,7 @@ Jupyter notebooks used for **exploratory data analysis and metric calculations**
 The notebook includes analyses such as:
 
 - artist diversity per year
-- genre distribution
+- track novelty and persistence over time
 - track persistence between years
 - discovery of new artists over time
 
@@ -282,22 +281,6 @@ artist_id
 
 ---
 
-## 2 — Retrieve artist genres
-
-Run:
-`python -m scripts.get_artist_genres`
-
-
-This script:
-
-- collects unique artists from the dataset
-- queries the Spotify API for artist metadata
-- retrieves genre information
-- saves the dataset to `data/raw/artist_genres.csv`
-
-
----
-
 # Example Dataset
 
 Example rows from `top_tracks.csv`:
@@ -319,8 +302,8 @@ The notebook investigates questions such as:
 
 - How many **new artists appear each year**
 - How stable my **favorite tracks are over time**
-- Whether my listening behavior is **becoming more diverse**
-- How genres evolve across the years
+- How my listening behavior evolves over time
+- The balance between new discoveries and recurring artists
 
 Additional results and visualizations will be added as the analysis progresses.
 
