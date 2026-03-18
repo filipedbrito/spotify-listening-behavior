@@ -294,9 +294,13 @@ Additional results and visualizations will be added as the analysis progresses.
 
 ## Results
 
-Full analysis and detailed write-up available at:
+A full write-up of the analysis and key findings is available at:
 
-`docs/artist_track_analysis.md`
+`docs/10y_behavior_analysis.md`
+
+---
+
+This project is an exploration of personal data, but also an exercise in building a simple end-to-end data pipeline — from data extraction to analysis and storytelling.
 
 ---
 

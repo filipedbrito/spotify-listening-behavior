@@ -1,212 +1,186 @@
-# Evolução do meu repertório musical (2016–2025)
+# Evolution of my music listening behavior (2016–2025)
 
-Após organizar meu histórico de escuta do Spotify em um Top 100 anual, explorei diferentes métricas para entender **como meu gosto musical evolui ao longo do tempo**.
+After organizing my Spotify listening history into a yearly Top 100, I explored different metrics to understand **how my music consumption behavior evolved over time**.
 
-A análise buscou responder principalmente três perguntas:
+The analysis focuses on three main questions:
 
-1. Quanto do meu repertório **permanece estável** entre anos?
-2. Quanto **novo repertório** entra a cada ano?
-3. Quando surge novidade, ela vem de **artistas novos** ou de **artistas que eu já escutava**?
+1. How much of my repertoire **remains stable** between years?  
+2. How much **new content** enters each year?  
+3. When novelty appears, does it come from **new artists** or **artists I already listen to**?  
 
-Essas dimensões ajudam a separar dois comportamentos diferentes:
+These dimensions help separate two different behaviors:
 
-- **descoberta musical real** (novos artistas)
-- **aprofundamento de repertório** (novas músicas de artistas já conhecidos)
+- **exploration** (discovering new artists)  
+- **depth** (listening more to artists I already know)
 
 ---
 
-# 1. Recorrência de músicas entre anos
+# 1. Track recurrence over time
 
-A primeira métrica calculada foi a **taxa de sobrevivência de músicas entre anos**.
+The first metric calculated was the **track survival rate between years**.
 
-Ela mede:
+It measures:
 
-> Qual porcentagem do Top 100 de um ano também estava presente no Top 100 do ano anterior.
+> What percentage of a given year's Top 100 also appeared in the previous year.
 
-Por exemplo:
+For example:
 
-- na transição **2016 → 2017**, **21% das músicas permaneceram**
-- portanto **79% do repertório mudou**
+- from **2016 → 2017**, **21% of tracks remained**  
+- meaning **79% of the repertoire changed**
 
 ![survive_track_rate](../docs/images/survive_track_rate.png)
 
-Durante boa parte da série histórica, a sobrevivência ficou entre **20% e 36%**, mas **caiu significativamente nos anos mais recentes**, chegando a cerca de **6% na transição 2024 → 2025**.
+Across most of the timeline, survival rates stayed between **20% and 36%**, but **dropped significantly in recent years**, reaching around **6% from 2024 → 2025**.
 
-Isso indica que:
+This suggests that:
 
-- poucas músicas permanecem favoritas por muitos anos
-- meu Top 100 anual tende a se renovar com frequência
+- few tracks remain favorites over long periods  
+- my yearly Top 100 is highly dynamic  
 
-À primeira vista, isso sugere **expansão constante do repertório**.
+At first glance, this indicates **high variability in consumption**.
 
 ---
 
-# 2. Novidade musical: quantas músicas realmente entram no repertório
+# 2. Musical novelty: how much is actually new?
 
-Para complementar essa leitura, calculei o percentual de **músicas novas no Top 100 de cada ano**, considerando como nova qualquer música que **nunca apareceu antes no histórico**.
+To complement this, I calculated the percentage of **new tracks entering the Top 100 each year**, where “new” means a track that **never appeared before in the historical data**.
 
-Os resultados reforçam o padrão de renovação:
+The pattern reinforces the previous finding:
 
 ![new_tracks](../docs/images/new_track.png)
 
-Ou seja, na maioria dos anos **cerca de três quartos do meu Top 100 é composto por músicas que nunca haviam aparecido antes**.
+In most years, **around 75% of the Top 100 consists of tracks that never appeared before**.
 
-Ps: as duas métricas se complementam matematicamente do primeiro pro segundo ano (16 -> 17)
+As expected:
 
-- sobrevivência **2016 → 2017 = 21%**
-- novidade **2017 ≈ 79%**
+- survival **2016 → 2017 = 21%**  
+- novelty **2017 ≈ 79%**
 
-Isso confirma a consistência do cálculo.
+The numbers are consistent.
+
+But this raises a more interesting question:
+
+> does this novelty represent true discovery, or just variation within familiar artists?
 
 ---
 
-# 3. Novidade de artistas: explorar música não é o mesmo que explorar artistas
+# 3. New tracks ≠ new artists
 
-No entanto, existe um ponto importante:
-
-> música nova não significa necessariamente artista novo.
-
-Para investigar isso, medi também a **entrada de novos artistas no Top 100 de cada ano**, ou seja, artistas que **nunca haviam aparecido antes no histórico**.
+To answer that, I measured the **entry of new artists per year**, meaning artists that had **never appeared before in the dataset**.
 
 ![new_artist](../docs/images/new_artists.png)
 
-Nos primeiros anos, a descoberta de artistas foi naturalmente alta:
+In the early years, artist discovery is naturally high.
 
-Com o passar do tempo, essa taxa se estabilizou na faixa de:
+Over time, it stabilizes around:
 
-**40% – 45%**
+**40%–45%**
 
-Isso indica que meu repertório passou a se consolidar em torno de um **conjunto relativamente estável de artistas**.
+This indicates that my listening behavior gradually consolidates around a **relatively stable core of artists**.
 
-Um ponto fora da curva aparece em **2024**, quando a taxa sobe novamente para cerca de **64%**, indicando um ano de maior exploração musical.
+There are some deviations:
 
-Já **2025 retorna ao menor valor da série (~39%)**, sugerindo um movimento de consolidação do repertório.
+- **2024 (~64%)** → a year of higher exploration  
+- **2025 (~39%)** → a more conservative phase  
+
+So even with many new tracks entering each year:
+
+> the **artist base tends to stabilize over time**
 
 ---
 
-# 4. De onde vêm as músicas novas?
+# 4. Where do new tracks come from?
 
-Para aprofundar essa análise, separei as músicas novas em duas categorias:
+To better understand novelty, I split new tracks into two categories:
 
-1. **música nova de artista novo**
-2. **música nova de artista já conhecido**
-
-Ou seja, mesmo quando uma música aparece pela primeira vez no meu histórico, ela pode vir de:
-
-- um artista que estou descobrindo
-- um artista que já faz parte do meu repertório
-
-O padrão geral foi relativamente estável:
+1. new track from a new artist  
+2. new track from a known artist  
 
 ![new_tracks_from_new_artists](../docs/images/new_tracks_from_new_artists.png)
 
-Em média:
+On average:
 
-- **60% a 70% das músicas novas vêm de artistas novos**
-- **30% a 40% vêm de artistas já conhecidos**
+- **60%–70%** of new tracks come from new artists  
+- **30%–40%** come from artists I already listen to  
 
-Isso indica que grande parte da expansão do meu repertório ocorre através da **descoberta de novos artistas**, não apenas explorando discografias já conhecidas.
+This shows a combination of:
 
-Alguns anos se destacam.
+- exploration  
+- reinforcement of existing preferences  
 
-O caso mais curioso foi **2022**.
+Some years highlight this dynamic:
 
-Nesse ano, apenas **~30% das músicas novas vieram de artistas novos**, o menor valor da série. Ou seja, naquele período eu estava:
-
-- ouvindo músicas novas
-- mas **principalmente de artistas que já conhecia**
-
-Isso sugere um comportamento de **aprofundamento no repertório existente**.
-
-Já **2023 apresenta o movimento oposto**, com cerca de **68% das músicas novas vindas de artistas novos**, indicando forte exploração de novos artistas.
+- **2022** → only ~30% from new artists → strong “depth” behavior  
+- **2023** → ~68% → strong exploration phase  
 
 ---
 
-# 5. Artistas dominantes ao longo dos anos
+# 5. Artist dominance and listening phases
 
-Para entender quais artistas moldaram diferentes fases do meu repertório, construí uma matriz mostrando **quantas músicas de cada artista aparecem no Top 100 de cada ano**.
-
-Alguns padrões ficam claros:
+To understand how artists shape different periods, I built a matrix of **track counts per artist per year**.
 
 ![cohort_artists_tracks_years](../docs/images/cohort_artists_tracks_years.png)
 
-**Dead Fish** domina fortemente os primeiros anos da série, chegando a:
+Clear patterns emerge:
 
-- **26 músicas no Top 100 em 2016**
-- **18 em 2017**
+- **Dead Fish** dominates the early years  
+- artists like **Raul Seixas** and **Sérgio Sampaio** appear in specific peaks  
+- newer artists emerge as new “waves” in the dataset  
 
-Isso indica um período de grande concentração do meu repertório em torno da banda.
+This shows that my listening history is not random — it is structured in **distinct phases of influence**.
 
-Outros artistas aparecem em **picos temporais**, sugerindo fases específicas de exploração:
-
-- **Raul Seixas** com forte presença em 2022
-- **Sérgio Sampaio** dominando 2024
-- **Omar Apollo** com forte presença em 2024
-- **Gastação Infinita** emergindo nos anos recentes
-
-Essa matriz ajuda a visualizar **ondas de influência artística** ao longo do tempo.
+Despite these shifts, there is a clear underlying consistency in taste.
 
 ---
 
-# 6. Músicas mais recorrentes do repertório
+# 6. Long-lasting tracks
 
-Por fim, analisei também quais músicas aparecem **repetidamente ao longo dos anos** no Top 100.
+I also analyzed tracks that appear **multiple times across different years**.
 
 ![cohort_tracks_years](../docs/images/cohort_tracks_years.png)
 
-Algumas faixas mostram **longevidade notável**, aparecendo em vários anos diferentes.
+Some tracks show strong longevity, acting as anchors in my listening behavior.
 
-Entre elas:
+However, an interesting recent pattern emerges:
 
-- **Siga — Dead Fish**
-- **Bridge Burning — Foo Fighters**
-- **Rinha de Magnata — Mukeka di Rato**
-- **Umaextrapun... — Black Alien**
-- **Conflito Violento — Ratos de Porão**
-- **Autonomia — Dead Fish**
+> in the last two years, very few of the earlier “core tracks” remain
 
-Essas músicas funcionam quase como **pilares do meu repertório**, retornando repetidamente ao longo dos anos.
-
-Isso indica que, apesar da alta rotatividade anual do Top 100, **algumas músicas permanecem como favoritas duradouras**.
+This suggests a **renewal phase within an already established taste profile**.
 
 ---
 
-# Conclusões até aqui
+# Key takeaways
 
-Juntando todas as métricas analisadas, surge um padrão relativamente claro:
+Looking across 10 years of data:
 
-Ao longo dos anos:
+- my listening shows **high track-level turnover**  
+- there is a constant inflow of new content  
+- but the artist base tends to **stabilize over time**  
 
-- meu repertório anual muda bastante
-- muitas músicas novas entram no Top 100
-- mas o conjunto de artistas tende a **se estabilizar ao longo do tempo**
+In practice:
 
-Ou seja, parte da novidade vem de **aprofundar em artistas que já fazem parte do meu gosto**, não apenas descobrir artistas completamente novos.
+> I don’t change my taste that much — I **deepen within it**.
 
-Isso é um comportamento bastante natural: conforme os anos passam, eu consolido um conjunto de artistas que realmente me agradam e passo a explorar **novas músicas — ou músicas antigas — dentro desse mesmo universo musical**.
-
-Ainda assim, existem momentos de **expansão real do repertório**, como aconteceu em 2024, quando a entrada de novos artistas aumentou significativamente.
+Most exploration happens **around the edges of what I already like**, rather than through radical shifts.
 
 ---
 
-# Próximos passos da análise
+# Final note
 
-Até aqui a análise explorou:
+This analysis focuses on **behavioral patterns**, rather than genre-based classification.
 
-- recorrência de músicas
-- novidade musical
-- descoberta de artistas
-- artistas dominantes por período
-- músicas mais recorrentes
+While enriching the dataset with genres could add another layer of insight, the current approach already provides a strong view of:
 
-Essas dimensões ajudam a entender **como meu gosto musical evolui ao longo do tempo**.
+- how novelty enters the system  
+- how preferences stabilize  
+- how exploration and repetition coexist over time  
 
-Nos próximos passos, a ideia é aprofundar perguntas como:
+---
 
-- quanto tempo uma música costuma permanecer no meu repertório
-- como ciclos de artistas surgem e desaparecem ao longo dos anos
-- qual é o equilíbrio entre **exploração** e **recorrência** no meu consumo musical
+# Next steps
 
-Essas perguntas ajudam a investigar o objetivo central do projeto:
+Possible extensions of this analysis include:
 
-> medir o quão **eclético** (ou não) é o meu consumo musical ao longo da última década.
+- measuring how long tracks remain relevant  
+- modeling artist lifecycle within the dataset  
+- quantifying exploration vs repetition more formally  
